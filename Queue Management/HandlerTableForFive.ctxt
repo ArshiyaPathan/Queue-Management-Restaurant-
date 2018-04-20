@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=HandlerTableForFive
+comment0.text=\n\ Write\ a\ description\ of\ class\ HandleTableForFive\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=guest
+comment1.target=void\ handleRequest(Guest)
+comment2.params=next
+comment2.target=void\ setSuccessor(Handler)
+numComments=3

@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=WaitList
+comment0.text=\n\ Write\ a\ description\ of\ class\ WaitList\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=WaitList()
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ WaitList\n
+comment2.params=
+comment2.target=WaitList\ getInstance()
+comment3.params=a
+comment3.target=void\ addGuest(Guest)
+comment4.params=a
+comment4.target=void\ addAvailableTable(AvailableTable)
+comment5.params=a
+comment5.target=void\ removeAvailableTable(AvailableTable)
+comment6.params=
+comment6.target=java.lang.String\ toString()
+numComments=7
