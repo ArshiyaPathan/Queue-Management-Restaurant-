@@ -1,27 +1,29 @@
-
 /**
- * Write a description of class HandleTableForMore here.
+ * Write a description of class HandleTableForFive here.
  *
  * @author (your name)
  * @version (a version number or a date)
  */
-public class HandlerTableForSixOrMore implements Handler
+public class HandlerTableForFour implements Handler
 {
-   private Handler successor=null;
-   
+    
+     private Handler successor=null;
+
   
-    public void handleRequest(Guest guest){
-        WaitList wt= WaitList.getInstance();
-          if(guest.partySize>5 ){
+
+     public void handleRequest(Guest guest){
+         WaitList wt= WaitList.getInstance();
+          if(guest.partySize<=4 ){
               System.out.println("-----------------------------------------------");
               AvailableTable tableUsed=null;
-                if( guest.alreadyServed==false){ 
-                    
-                       for(AvailableTable at:wt.availableTables){
-                      if (at.tableSize==6){
+               if( guest.alreadyServed==false){ 
+                   
+                      for(AvailableTable at:wt.availableTables){
+                      if (at.tableSize==4){
                           
-                            System.out.println("Handling party of more than 5");
-                            System.out.println("Giving Table to "+guest.name+", party of"+ guest.partySize);
+                          System.out.println("Handling party of 4 or less but greater than 2");
+                             
+                          System.out.println("Giving Table to "+guest.name+", party of"+ guest.partySize);
                             guest.alreadyServed=true;
                             tableUsed=at;
                         }
@@ -33,7 +35,7 @@ public class HandlerTableForSixOrMore implements Handler
                     }else{
                         wt.availableTables.remove(tableUsed);
                     }
-             }
+            }
               else if(wt.guestQueue.peek().equals(guest)){
                 wt.guestQueue.remove();
                 }
